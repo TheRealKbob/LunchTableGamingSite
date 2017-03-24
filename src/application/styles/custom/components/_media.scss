@@ -6,6 +6,14 @@
   {
     position : relative;
     overflow : hidden;
+    width: 130px;
+    height: 130px;
+
+    img{
+      height: 100%;
+      width: auto;
+    }
+
   }
 
   .media-hover-image
@@ -13,22 +21,30 @@
     position : absolute;
     top : 0;
     left : -100%;
+
+    transition : left 0.5s;
+
+    &.active
+    {
+      left : 0 !important;
+    }
+
   }
 
-}
-
-@include media-breakpoint-up( md )
-{
-  .ltg-member-media:nth-child( even )
+  @include media-breakpoint-up( md )
   {
-    .media-thumb
+    &:nth-child( even )
     {
-      order : 10;
-    }
+      .media-thumb
+      {
+        order : 10;
+      }
 
-    .media-hover-image
-    {
-      left : 100%;
+      .media-hover-image
+      {
+        left : 100%;
+      }
     }
   }
+
 }

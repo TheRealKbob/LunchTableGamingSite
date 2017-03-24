@@ -19,7 +19,7 @@ gulp.task( 'assemble:html', function(){
 
 gulp.task( 'assemble:scripts', function(){
   return browserify( { entries : config.scripts.src + '/application.js' } )
-        .transform(babel, { presets : [ 'es2015' ] } )
+        .transform(babel, { presets : [ 'es2015' ], plugins : [ 'transform-class-properties' ] } )
         .bundle()
         .pipe( source( 'bundle.js' ) )
         .pipe( gulp.dest( config.scripts.dest ) );

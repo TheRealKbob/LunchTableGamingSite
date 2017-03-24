@@ -11,7 +11,6 @@ body
 
   section
   {
-
     padding : 1rem 0;
 
     &:first-child
@@ -19,9 +18,9 @@ body
       padding-top : 3rem;
     }
 
-    &:nth-child( even )
+    &:nth-child( even )
     {
-      background-color : $floor-grey;
+      background-color: $floor-grey;
     }
   }
 }
