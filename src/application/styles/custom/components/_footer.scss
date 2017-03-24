@@ -1,0 +1,7 @@
+footer
+{
+  position : relative;
+  padding : 3rem 0;
+
+  @include draw-ltg-border( 5px );
+}

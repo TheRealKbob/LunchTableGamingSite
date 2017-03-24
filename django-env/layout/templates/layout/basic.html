@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    {% load staticfiles %}
+    <meta charset="utf-8">
+    <title>Lunch Table Games {% if page_title|length > 0 %} - {{ page_title }}{% endif %}</title>
+    <link rel="stylesheet" href="{% static 'layout/styles/layout.css' %}">
+  </head>
+  <body>
+    {% include 'layout/includes/header.html' %}
+    {% block content %}{% endblock %}
+    {% include 'layout/includes/footer.html' %}
+    <script
+      src="https://code.jquery.com/jquery-3.2.0.min.js"
+      integrity="sha256-JAW99MJVpJBGcbzEuXk4Az05s/XyDdBomFqNlM3ic+I="
+      crossorigin="anonymous"></script>
+    <script type="text/javascript" src="{% static 'layout/scripts/bundle.js' %}"></script>
+  </body>
+</html>

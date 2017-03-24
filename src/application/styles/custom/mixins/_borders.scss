@@ -1,0 +1,13 @@
+@mixin draw-ltg-border( $height )
+{
+  &:before{
+    background: linear-gradient( to right, $brand-primary 33%, $brand-secondary 33%, $brand-secondary 66%, $brand-tertiary 66%, $brand-tertiary 100% );
+    position: absolute;
+    content: '';
+    height: $height;
+    right: 0;
+    left: 0;
+    top: 0;
+    z-index: 0;
+  }
+}

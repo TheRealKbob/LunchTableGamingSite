@@ -1,0 +1,20 @@
+.ltg-header
+{
+  position : absolute;
+  height : $header-height;
+  z-index : 100;
+  width : 100%;
+
+  // Adds padding to the next div after the header
+  & + div
+  {
+    padding-top : $header-height;
+  }
+}
+
+.ltg-header-logo
+{
+  position: absolute;
+  width: 150px;
+  height: 150px;
+}

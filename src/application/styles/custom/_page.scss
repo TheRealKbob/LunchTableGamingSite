@@ -1,0 +1,27 @@
+body
+{
+  background-color : $sky-blue;
+}
+
+#main
+{
+  padding-bottom : 5rem;
+  background-color : #fff;
+  //height: 2000px;
+
+  section
+  {
+
+    padding : 1rem 0;
+
+    &:first-child
+    {
+      padding-top : 3rem;
+    }
+
+    &:nth-child( even )
+    {
+      background-color : $floor-grey;
+    }
+  }
+}

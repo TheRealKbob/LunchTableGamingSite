@@ -1,0 +1,14 @@
+.navbar
+{
+  width : 100%;
+
+  a, a:hover, a:visited
+  {
+    color : inherit;
+  }
+
+  @include media-breakpoint-up( md )
+  {
+    height : $nav-height;
+  }
+}
