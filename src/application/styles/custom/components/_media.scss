@@ -6,8 +6,8 @@
   {
     position : relative;
     overflow : hidden;
-    width: 130px;
-    height: 130px;
+    width: 125px;
+    height: 125px;
 
     img{
       height: 100%;
@@ -28,7 +28,6 @@
     {
       left : 0 !important;
     }
-
   }
 
   @include media-breakpoint-up( md )
@@ -46,5 +45,4 @@
       }
     }
   }
-
 }
